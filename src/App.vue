@@ -1,28 +1,58 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Formulaire />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Formulaire from "./components/Formulaire.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Formulaire
   }
 };
 </script>
 
 <style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #0d3a58;
+}
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  min-height: 100vh;
+}
+.orange,
+.pink,
+.blue,
+.yellow {
+  font-weight: bold;
+}
+
+.orange {
+  color: #ff9d00;
+}
+
+.pink {
+  color: #fb94ff;
+}
+
+.yellow {
+  color: #ffc600;
+}
+
+.blue {
+  color: #9effff;
+}
+
+.hidden {
+  display: none;
+}
+
+.displayed {
+  display: block;
 }
 </style>
