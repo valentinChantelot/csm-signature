@@ -56,7 +56,7 @@
           v-model="mail"
           placeholder="Email"
         />
-        <button @click="showSignatureVisualization()">Générate</button>
+        <button @click="showSignatureVisualization()">Générer</button>
       </section>
     </div>
     <div :class="signatureVisualizationState">
